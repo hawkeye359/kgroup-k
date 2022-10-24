@@ -1,0 +1,84 @@
+body {
+  background: white;
+}
+.contact-main-div {
+  display: flex;
+}
+
+.navbar {
+  position: relative;
+  background: white;
+}
+.contact {
+  width: 50%;
+  padding-bottom: 3rem;
+  background: white;
+}
+.contact_div {
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+  background: white;
+}
+.contactus_query {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  background: #0088a9;
+  margin-bottom: 4rem;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  border: 4px solid #0088a9;
+}
+.footer {
+  background: rgb(36, 37, 42);
+}
+.checkbox:hover {
+  color: #0088a9;
+}
+.invalid-email {
+  display: none;
+}
+
+.chairperson-div {
+  width: 50%;
+  height: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+.chairperson-div img {
+  width: 300px;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+}
+.chairperson-div h2 {
+  font-size: 2rem;
+  margin: 1rem;
+  color: black;
+  margin-bottom: 0;
+  font-family: Roboto Slab;
+}
+.chairperson-div p {
+  color: black;
+}
+cite {
+  display: block;
+  margin: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 700px) {
+  .contact-main-div {
+    flex-direction: column;
+  }
+  .contact {
+    width: 100%;
+  }
+  .chairperson-div {
+    width: 100%;
+  }
+  .contactus_query {
+    font-size: 1.5rem;
+  }
+}

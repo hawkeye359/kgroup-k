@@ -1,0 +1,91 @@
+body {
+  background: white;
+}
+.navbar {
+  position: relative;
+}
+.kaviyatri-section {
+}
+.kaviyatri-container {
+  display: flex;
+}
+.kaviyatri-headline {
+  position: sticky;
+  top: 0px;
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+  background: white;
+  font-family: Roboto Slab, serif;
+  margin: 2rem 0;
+  font-weight: 900;
+  transition: 0.5s;
+}
+.kaviyatri-headline.change {
+  background: black;
+  color: white;
+}
+.info-div {
+  max-width: 100%;
+  width: 800px;
+  padding: 2rem;
+  font-size: 1.2em;
+  color: black;
+  margin: auto;
+}
+.info-div h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-bottom: 4px solid black;
+}
+
+.kaviyatri-image {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card {
+  margin: 0;
+  width: 45%;
+  margin: 0rem;
+  transition: 0.3s;
+  max-width: 1000px;
+  z-index: 5;
+}
+.card:hover {
+  transform: scale(1);
+}
+.card-content {
+  padding: 0.2rem;
+}
+.content {
+  font-size: 1em;
+  margin-top: 0.2rem;
+  font-weight: 600;
+}
+/* .kaviyatri-image img {
+    width: 45%;
+    min-width: 200px;
+} */
+
+.book {
+  margin: 1rem 0;
+}
+@media (max-width: 700px) {
+  .kaviyatri-headline {
+    font-size: 1.5rem;
+  }
+  .kaviyatri-image {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    margin: 0;
+    width: 95%;
+    margin: 0rem;
+    transition: 0.3s;
+    max-width: 1000px;
+    margin: 2rem 0;
+  }
+}

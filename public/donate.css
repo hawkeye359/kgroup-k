@@ -1,0 +1,39 @@
+.donate-section {
+  width: 100%;
+  display: flex;
+  padding: 0.5rem;
+}
+.donate-why {
+  width: 50%;
+  padding: 2rem;
+  text-align: center;
+  height: 400px;
+}
+.donate-why h2 {
+  font-size: 2rem;
+}
+.donate-why h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.donate-info {
+  width: 50%;
+  padding: 2rem;
+  border: 2px dashed black;
+}
+.ac {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: black;
+}
+@media (max-width: 700px) {
+  .donate-section {
+    flex-direction: column;
+  }
+  .donate-why {
+    width: 100%;
+  }
+  .donate-info {
+    width: 100%;
+  }
+}

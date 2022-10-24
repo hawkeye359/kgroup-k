@@ -1,0 +1,55 @@
+body {
+  background: white;
+}
+.navbar {
+  position: relative;
+}
+.kayeth-section {
+}
+.kayeth-container {
+  display: flex;
+}
+.kayeth-headline {
+  position: sticky;
+  top: 0px;
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+  background: white;
+  font-family: Roboto Slab, serif;
+  margin: 2rem 0;
+  font-weight: 900;
+  transition: 0.5s;
+}
+.kayeth-headline.change {
+  background: black;
+  color: white;
+}
+@media (max-width: 700px) {
+  .kayeth-headline {
+    font-size: 1.5rem;
+  }
+}
+.info-div {
+  max-width: 100%;
+  width: 800px;
+  padding: 2rem;
+  font-size: 1.2em;
+  color: black;
+  margin: auto;
+}
+.info-div h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-bottom: 4px solid black;
+}
+
+.kayeth-image {
+  height: 50vh;
+  background: url("images/connect.webp");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}

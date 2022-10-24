@@ -1,0 +1,394 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Arvo", serif;
+}
+
+.logo {
+  position: absolute;
+}
+
+#logo {
+  width: 200px;
+}
+
+@media (max-width: 700px) {
+  #logo {
+    width: 200px;
+  }
+}
+
+.navbar {
+  width: 100%;
+  height: 15vh;
+  max-height: 100px;
+  background: white;
+  padding: 1rem;
+}
+
+.navbar-menu {
+  justify-content: flex-end;
+}
+
+.navbar-item {
+  margin: 0px;
+  padding: 0px;
+}
+
+.swiper-container {
+  height: 80vh;
+  max-height: 800px;
+}
+
+.swiper-slide {
+  background: url("/public/company.webp");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide.trust {
+  background: url("/public/trust.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide.legal {
+  background: url("/public/legal.webp");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide.kayeth {
+  background: url("/public/connect.webp");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide.kaviyatri {
+  background: url("/public/poet.webp");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  height: 80vh;
+  max-height: 800px;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  align-items: center;
+  cursor: grabbing;
+  flex-direction: column;
+  background-blend-mode: overlay;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+}
+
+.swiper-content {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  background-image: linear-gradient(rgba(36, 37, 42, 0.7), rgba(36, 37, 42, 0));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.overlay h1 {
+  font-size: 3em;
+  font-weight: 600;
+  color: white;
+  word-wrap: break-word;
+  text-align: center;
+  padding: 10px;
+  /* border-bottom: 3px solid white; */
+  font-family: "Roboto Slab", serif;
+}
+
+.overlay p {
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1.2em;
+  padding: 10px;
+}
+
+.navbar-start {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px;
+  margin-right: 2rem;
+  font-size: 1.2em;
+  color: black;
+}
+
+@media (max-width: 1023px) {
+  .navbar-start {
+    flex-direction: column;
+  }
+}
+
+.navbar-item {
+  padding: 0.5rem;
+}
+
+.navbar-start .navbar-item {
+  color: black;
+}
+
+.navbar-end {
+  margin: 0px;
+}
+
+.button.is-primary {
+  background: #0088a9;
+}
+
+.button.more {
+  margin: 1rem;
+}
+
+@media (max-width: 700px) {
+  .swiper-content h1 {
+    font-size: 2em;
+  }
+
+  .swiper-content p {
+    font-size: 1em;
+  }
+}
+
+.team {
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 800px;
+  background: white;
+}
+
+.team_inner {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 1rem;
+  transition: 0.3s;
+
+  width: 300px;
+}
+
+.card .card-image {
+  width: 100%;
+  height: 100%;
+}
+
+.card .card-image .image {
+  width: 100%;
+  height: 100%;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  min-height: 400px;
+}
+
+.map-image.america {
+  background-image: url("images/american_map.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.map-image.dubai {
+  background-image: url("images/dubai_map.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.map-image.pune {
+  background-image: url("images/pune_map.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.map-image.mumbai {
+  background-image: url("images/mumbai-map.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boec-logo {
+  height: 100px;
+}
+
+.saiba-logo {
+  height: 100px;
+}
+
+.shivam-logo {
+  height: 100px;
+}
+
+.paramone-logo {
+  height: 80px;
+}
+
+.card:hover {
+  box-shadow: 5px 10px 15px black;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.team_headline {
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem;
+  color: black;
+}
+
+.footer {
+  background: black;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer p {
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-footer {
+  width: 34%;
+  height: 100%;
+  min-width: 200px;
+}
+
+.social-footer {
+  width: 33%;
+  min-width: 200px;
+  height: 100%;
+}
+
+.links-footer {
+  width: 33%;
+  min-width: 200px;
+  height: 100%;
+}
+
+.links-container {
+  display: flex;
+  height: 100%;
+}
+
+.footer-link-container {
+  width: 50%;
+  padding: 1rem;
+  color: white;
+}
+
+.links-footer h2 {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.social-footer {
+  padding: 1rem;
+}
+
+.social-icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.social-footer h2 {
+  font-size: 1.2rem;
+  color: grey;
+  text-align: center;
+}
+
+.social-icons svg {
+  margin: 0.5rem;
+}
+
+#footer-logo {
+  width: 300px;
+  padding: 1rem;
+}
+
+.address {
+  padding-left: 1rem;
+}
+
+.donate {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin: 1rem auto;
+  border: 2px dashed black;
+  position: relative;
+  height: 300px;
+}
+
+.donate-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+}
+
+.donate-inner h2 {
+  font-size: 2rem;
+}
+
+.donate-inner h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.donate-button {
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .donate-inner h2 {
+    font-size: 1.5rem;
+  }
+
+  .donate-inner h3 {
+    font-size: 1rem;
+  }
+}
