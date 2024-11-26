@@ -1,243 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/public/style.css">
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/public/style.css" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="/public/contact.css">
-</head>
+    <link rel="stylesheet" href="/public/contact.css" />
+  </head>
 
-<body>
-    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
-        <a class="logo" href="/">
-            <img id="logo" src="/public/logo2.png" alt="">
+  <body>
+    <nav
+      class="navbar is-transparent"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <a class="logo" href="/">
+        <img id="logo" src="/public/logo2.png" alt="" />
+      </a>
+      <div class="navbar-brand">
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
         </a>
-        <div class="navbar-brand">
+      </div>
 
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="/trust" class="navbar-item"> Trust </a>
+          <a href="/company" class="navbar-item"> Company </a>
+          <a href="/legal" class="navbar-item"> Legal </a>
+          <a href="/kayeth" class="navbar-item"> Kayeth </a>
+          <a href="/kaviyatri" class="navbar-item"> Kaviyatri </a>
         </div>
 
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-                <a href="/trust" class="navbar-item">
-                    Trust
-                </a>
-                <a href="/company" class="navbar-item">
-                    Company
-                </a>
-                <a href="/legal" class="navbar-item">
-                    Legal
-                </a>
-                <a href="/kayeth" class="navbar-item">
-                    Kayeth
-                </a>
-                <a href="/kaviyatri" class="navbar-item">
-                    Kaviyatri
-                </a>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a href="/media" class="button is-primary">
+                <strong>Media Gallery</strong>
+              </a>
+              <a href="/contact" class="button is-light"> Contact Us </a>
             </div>
-
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a href="/media" class="button is-primary">
-                            <strong>Media Gallery</strong>
-                        </a>
-                        <a href="/contact" class="button is-light">
-                            Contact Us
-                        </a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </nav>
     <section class="contact-main-div">
-        <section class="contact">
-            <div class="contact_div">
-                <h1 class="contactus_query">CONTACT US FOR ANY QUERY</h1>
-                <form action="/contact" method="POST">
-                    <div class="field">
-                        <label class="label">Name</label>
-                        <div class="control">
-                            <input name="name" class="input" type="text" placeholder="Text input">
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label class="label">Email</label>
-                        <div class="control">
-                            <input id="email-input" name="email" class="input" type="email"
-                                placeholder="sample@email.com">
-
-                        </div>
-                        <p class="invalid-email help is-danger">this email is invalid</p>
-                    </div>
-
-                    <div class="field">
-                        <label class="label">Subject</label>
-                        <div class="control">
-                            <div class="select">
-                                <select name="subject">
-                                    <option value="kepl">KEPL</option>
-                                    <option value="trust">TRUST</option>
-                                    <option value="kcase">KJURIST</option>
-                                    <option value="kayeth">KAYETH</option>
-                                    <option value="kaviyatri">KAVIYATRI</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label class="label">Message</label>
-                        <div class="control">
-                            <textarea name="message" class="textarea" placeholder="Textarea"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="field is-grouped">
-                        <div class="control">
-                            <button class="submit-button button is-link ">Submit</button>
-                        </div>
-                        <div class="control">
-                            <button class="button is-link is-light">Cancel</button>
-                        </div>
-                    </div>
-                </form>
+      <section class="contact">
+        <div class="contact_div">
+          <h1 class="contactus_query">CONTACT US FOR ANY QUERY</h1>
+          <form action="/contact" method="POST">
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control">
+                <input
+                  name="name"
+                  class="input"
+                  type="text"
+                  placeholder="Text input"
+                />
+              </div>
             </div>
-        </section>
-        <section class="chairperson-div">
-            <img src="/public/chairman.webp" alt="">
-            <h2>Shubhi Saxena</h2>
-            <cite>Chairman, @K group</cite>
-            <p>Shubhi Saxena is a young, dynamic, educationist, creative, and well-connected personality representing
-                youth.
-                Academically she is B.com., M.B.A., undergone through the course of Chartered Accountancy, L.L.B.and
-                currently pursuing her P.H.D.Some of her papers will be published soon.
-                By passion, she is a well-known celebrity fame poetess, author, and eminent speaker and has contributed
-                a lot to the language Hindi and Indian values.
-                On the one hand, she is a young entrepreneur, legal and taxation expert, and on the other hand an
-                eminent writer, speaker, influencer, and social worker.
 
-                She has her consistent involvement in socio-politics, social activities, and helping the needy with
-                bleeding passion aiming to see the nation and its youth at a height that makes her more of a human above
-                her profession</p>
-        </section>
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control">
+                <input
+                  id="email-input"
+                  name="email"
+                  class="input"
+                  type="email"
+                  placeholder="sample@email.com"
+                />
+              </div>
+              <p class="invalid-email help is-danger">this email is invalid</p>
+            </div>
+
+            <div class="field">
+              <label class="label">Subject</label>
+              <div class="control">
+                <div class="select">
+                  <select name="subject">
+                    <option value="kepl">KEPL</option>
+                    <option value="trust">TRUST</option>
+                    <option value="kcase">KJURIST</option>
+                    <option value="kayeth">KAYETH</option>
+                    <option value="kaviyatri">KAVIYATRI</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea
+                  name="message"
+                  class="textarea"
+                  placeholder="Textarea"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="submit-button button is-link">Submit</button>
+              </div>
+              <div class="control">
+                <button class="button is-link is-light">Cancel</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="chairperson-div">
+        <img src="/public/chairman.webp" alt="" />
+        <h2>Shubhi Saxena</h2>
+        <cite>Chairman, @K group</cite>
+        <p>
+          Shubhi Saxena is a young, dynamic, educationist, creative, and
+          well-connected personality representing youth. Academically she is
+          B.com., M.B.A., undergone through the course of Chartered Accountancy,
+          L.L.B.and currently pursuing her P.H.D.Some of her papers will be
+          published soon. By passion, she is a well-known celebrity fame
+          poetess, author, and eminent speaker and has contributed a lot to the
+          language Hindi and Indian values. On the one hand, she is a young
+          entrepreneur, legal and taxation expert, and on the other hand an
+          eminent writer, speaker, influencer, and social worker. She has her
+          consistent involvement in socio-politics, social activities, and
+          helping the needy with bleeding passion aiming to see the nation and
+          its youth at a height that makes her more of a human above her
+          profession
+        </p>
+      </section>
     </section>
     <footer class="footer">
-        <div class="footer-content">
-            <div class="info-footer">
-                <a class="footer-logo" href="/">
-                    <img id="footer-logo" src="/public/logo.png" alt="">
-                </a>
-                <address class="address">
-                    Chairman <a href="/contact">Shubhi Saxena</a>.<br>
-                    Visit us at:<br>
-                    31C, SECOND FLOOR, OPPOSITE A.K BHAWAN, MOHAMMADPUR,BHIKAJI CAMA PLACE,NEW DELHI - 110066
-                </address>
-            </div>
-            <div class="social-footer">
-                <h2>Social</h2>
-
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/shubhi.arj" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="50px" height="50px">
-                            <path fill="#8bb7f0" d="M15 1A14 14 0 1 0 15 29A14 14 0 1 0 15 1Z" />
-                            <path fill="#fff"
-                                d="M28.921 16.479c.002-.02.006-.039.008-.059C28.926 16.439 28.922 16.459 28.921 16.479zM1.071 16.415c.003.027.008.053.011.08C1.079 16.468 1.074 16.441 1.071 16.415zM16.996 18.71h3.623l.569-3.68h-4.192v-2.012c0-1.529.5-2.885 1.93-2.885h2.298V6.922c-.404-.054-1.257-.174-2.871-.174-3.37 0-5.345 1.78-5.345 5.834v2.449H9.544v3.68h3.464v9.92c.684.103 1.379.173 2.093.173.644 0 1.274-.059 1.895-.143V18.71z" />
-                            <g>
-                                <path fill="#4e7ab5"
-                                    d="M15,2c7.168,0,13,5.832,13,13s-5.832,13-13,13S2,22.168,2,15S7.832,2,15,2 M15,1 C7.268,1,1,7.268,1,15s6.268,14,14,14s14-6.268,14-14S22.732,1,15,1L15,1z" />
-                            </g>
-                        </svg>
-                    </a>
-                    <a href="https://instagram.com/shubhi.arj?utm_medium=copy_link" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="50px" height="50px">
-                            <path fill="#8585cc"
-                                d="M30.5,38.5c4.418,0,8-3.582,8-8v-21c0-4.418-3.582-8-8-8h-21c-4.418,0-8,3.582-8,8v21 c0,4.418,3.582,8,8,8H30.5z" />
-                            <path fill="#8d8dd8"
-                                d="M3.4,4.331C2.217,5.726,1.5,7.528,1.5,9.5v21c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-21 c0-0.503-0.052-0.992-0.141-1.469C32.135,4.22,24.832,2,17,2C12.229,2,7.657,2.832,3.4,4.331z" />
-                            <path fill="#bd82f4"
-                                d="M1.505,9.404C1.504,9.437,1.5,9.468,1.5,9.5v21c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8V12.897 C32.439,8.56,25.021,6,17,6C11.465,6,6.22,7.226,1.505,9.404z" />
-                            <path fill="#ed73f4"
-                                d="M1.5,13.88V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8V17.981C32.724,13.013,25.217,10,17,10 C11.394,10,6.124,11.414,1.5,13.88z" />
-                            <path fill="#f97dcd"
-                                d="M17,14c-5.705,0-11.014,1.664-15.5,4.509V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-6.935 C33.194,17.698,25.534,14,17,14z" />
-                            <path fill="#fc9c95"
-                                d="M17,18c-5.861,0-11.237,2.033-15.5,5.411V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-0.238 C34.143,22.925,26.152,18,17,18z" />
-                            <path fill="#ffac99"
-                                d="M17,22c-6.145,0-11.66,2.651-15.5,6.859V30.5c0,4.418,3.582,8,8,8h21c2.465,0,4.668-1.117,6.136-2.87 C33.648,27.674,25.999,22,17,22z" />
-                            <path fill="#ffc49c"
-                                d="M30.5,38.5c0.957,0,1.87-0.177,2.721-0.485C31.087,31.065,24.649,26,17,26 c-6.186,0-11.592,3.309-14.566,8.248C3.778,36.777,6.437,38.5,9.5,38.5H30.5z" />
-                            <path fill="#ffde8d"
-                                d="M17,30c-5.137,0-9.573,2.984-11.684,7.309C6.535,38.06,7.964,38.5,9.5,38.5h19.683 C27.35,33.542,22.595,30,17,30z" />
-                            <path fill="#fff69f"
-                                d="M17,34c-3.319,0-6.193,1.813-7.753,4.487C9.332,38.49,9.415,38.5,9.5,38.5h15.26 C23.203,35.818,20.324,34,17,34z" />
-                            <path fill="#8b75a1"
-                                d="M31,2c3.86,0,7,3.14,7,7v22c0,3.86-3.14,7-7,7H9c-3.86,0-7-3.14-7-7V9c0-3.86,3.14-7,7-7H31 M31,1H9 C4.582,1,1,4.582,1,9v22c0,4.418,3.582,8,8,8h22c4.418,0,8-3.582,8-8V9C39,4.582,35.418,1,31,1L31,1z" />
-                            <path fill="#fff" d="M27.5 11A1.5 1.5 0 1 0 27.5 14A1.5 1.5 0 1 0 27.5 11Z" />
-                            <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                                d="M20 14A6 6 0 1 0 20 26A6 6 0 1 0 20 14Z" />
-                            <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                                d="M33,14.5c0-4.142-3.358-7.5-7.5-7.5 c-2.176,0-8.824,0-11,0C10.358,7,7,10.358,7,14.5c0,2.176,0,8.824,0,11c0,4.142,3.358,7.5,7.5,7.5c2.176,0,8.824,0,11,0 c4.142,0,7.5-3.358,7.5-7.5C33,23.324,33,16.676,33,14.5z" />
-                        </svg>
-                    </a>
-                    <a href="https://twitter.com/ShubhiS44569779">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="50px" height="50px">
-                            <path fill="#c2e8ff"
-                                d="M12.951,35c-3.459,0-6.842-0.822-9.895-2.394c3.589-0.042,6.972-1.23,9.795-3.443l1.106-0.867 l-1.405-0.026c-2.85-0.053-5.379-1.752-6.524-4.306c0.233,0.02,0.466,0.029,0.698,0.029c0.745,0,1.48-0.098,2.187-0.291 l2.038-0.557l-2.071-0.416c-3.154-0.633-5.503-3.28-5.816-6.435c0.94,0.398,1.956,0.624,2.979,0.657l1.748,0.056l-1.454-0.972 C4.303,14.679,3.09,12.408,3.09,9.964c0-1.048,0.225-2.081,0.654-3.025c4.04,4.629,9.808,7.443,15.944,7.751l0.661,0.033 l-0.148-0.645c-0.125-0.543-0.188-1.103-0.188-1.665c0-4.023,3.273-7.296,7.296-7.296c2.01,0,3.951,0.84,5.326,2.304l0.189,0.202 l0.272-0.054c1.337-0.263,2.628-0.691,3.853-1.279c-0.605,1.145-1.486,2.079-2.594,2.742l-0.397,0.237L34.322,10l0.364-0.016 c0.988-0.121,1.94-0.328,2.875-0.628c-0.806,0.958-1.725,1.811-2.744,2.547l-0.218,0.157l0.011,0.27 c0.014,0.327,0.021,0.657,0.021,0.987c0,5.265-2.037,10.595-5.588,14.624C26.206,31.162,21.11,35,12.951,35z" />
-                            <path fill="#7496c4"
-                                d="M27.309,5.617c1.873,0,3.681,0.782,4.961,2.146l0.379,0.404l0.543-0.107 c0.806-0.159,1.595-0.376,2.364-0.649c-0.422,0.464-0.91,0.864-1.459,1.192l-0.789,0.508l0.427,0.833l0.318,0.621l0.693-0.085 c0.425-0.052,0.843-0.119,1.256-0.203c-0.464,0.437-0.958,0.844-1.478,1.22l-0.436,0.315l0.023,0.538 c0.014,0.32,0.021,0.643,0.021,0.966c0,5.145-1.991,10.354-5.463,14.294c-2.77,3.143-7.745,6.889-15.718,6.889 c-2.727,0-5.406-0.524-7.906-1.533c2.959-0.382,5.73-1.542,8.115-3.411l2.213-1.735l-2.811-0.052 c-2.371-0.044-4.504-1.311-5.693-3.277c0.74-0.012,1.472-0.115,2.176-0.308l4.073-1.114l-4.14-0.831 c-2.663-0.534-4.71-2.61-5.287-5.182c0.755,0.235,1.543,0.37,2.335,0.395l3.495,0.113l-2.908-1.944 C4.72,14.356,3.59,12.241,3.59,9.964c0-0.713,0.112-1.418,0.328-2.089c4.093,4.37,9.748,7.014,15.746,7.314l1.322,0.066 l-0.297-1.29c-0.116-0.505-0.176-1.027-0.176-1.552C20.512,8.666,23.561,5.617,27.309,5.617 M27.309,4.617 c-4.305,0-7.796,3.491-7.796,7.796c0,0.611,0.07,1.206,0.201,1.776C13.234,13.865,7.49,10.76,3.644,6.044 C2.974,7.195,2.59,8.534,2.59,9.964c0,2.704,1.376,5.09,3.467,6.488c-1.278-0.041-2.479-0.391-3.531-0.975c0,0.033,0,0.065,0,0.098 c0,3.778,2.687,6.929,6.254,7.644c-0.654,0.179-1.343,0.274-2.055,0.274c-0.502,0-0.991-0.049-1.466-0.139 c0.993,3.097,3.871,5.352,7.283,5.415c-2.668,2.092-6.029,3.338-9.682,3.338c-0.629,0-1.249-0.036-1.86-0.109 C4.45,34.21,8.548,35.5,12.951,35.5c14.34,0,22.181-11.88,22.181-22.182c0-0.337-0.008-0.674-0.022-1.009 c1.523-1.1,2.845-2.473,3.89-4.036c-1.385,0.615-2.814,1.024-4.375,1.215l-0.014-0.027c1.61-0.964,2.756-2.453,3.339-4.274 c-1.506,0.893-3.175,1.542-4.951,1.892C31.577,5.564,29.551,4.617,27.309,4.617L27.309,4.617z" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="links-footer">
-                <h2>SITE LINKS</h2>
-                <div class="links-container">
-                    <div class="container footer-link-container">
-                        <ul>
-                            <li><a href="/trust">trust</a></li>
-                            <li><a href="/company">company</a></li>
-                            <li><a href="/legal">legal</a></li>
-                            <li><a href="/kayeth">kayeth</a></li>
-                            <li><a href="/kaviyatri">kaviyatri</a></li>
-                        </ul>
-                    </div>
-                    <div class="container footer-link-container">
-                        <ul>
-                            <li><a href="/media">Media Gallery</a></li>
-                            <li><a href="/contact">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div class="footer-content">
+        <div class="info-footer">
+          <a class="footer-logo" href="/">
+            <img id="footer-logo" src="/public/logo.png" alt="" />
+          </a>
+          <address class="address">
+            Chairman <a href="/contact">Shubhi Saxena</a>.<br />
+            Visit us at:<br />
+            35, Hanuman Road, New Delhi, G.P.O,<br />
+            New Delhi, Delhi - 110001
+          </address>
         </div>
-        <p class="lisc">© 2021 @kgruop All Rights Reserved
-        </p>
-        <p class="lisc">The material on this site may not be reproduced, distributed, transmitted, cached or otherwise
-            used,
-            except with
-            the prior written permission of @kgroup.</p>
+        <div class="social-footer">
+          <h2>Social</h2>
+
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/DrShubhiSaxena?mibextid=ZbWKwL"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+                width="50px"
+                height="50px"
+              >
+                <path
+                  fill="#8bb7f0"
+                  d="M15 1A14 14 0 1 0 15 29A14 14 0 1 0 15 1Z"
+                />
+                <path
+                  fill="#fff"
+                  d="M28.921 16.479c.002-.02.006-.039.008-.059C28.926 16.439 28.922 16.459 28.921 16.479zM1.071 16.415c.003.027.008.053.011.08C1.079 16.468 1.074 16.441 1.071 16.415zM16.996 18.71h3.623l.569-3.68h-4.192v-2.012c0-1.529.5-2.885 1.93-2.885h2.298V6.922c-.404-.054-1.257-.174-2.871-.174-3.37 0-5.345 1.78-5.345 5.834v2.449H9.544v3.68h3.464v9.92c.684.103 1.379.173 2.093.173.644 0 1.274-.059 1.895-.143V18.71z"
+                />
+                <g>
+                  <path
+                    fill="#4e7ab5"
+                    d="M15,2c7.168,0,13,5.832,13,13s-5.832,13-13,13S2,22.168,2,15S7.832,2,15,2 M15,1 C7.268,1,1,7.268,1,15s6.268,14,14,14s14-6.268,14-14S22.732,1,15,1L15,1z"
+                  />
+                </g>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/thepinkconcert/?hl=en"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 40 40"
+                width="50px"
+                height="50px"
+              >
+                <path
+                  fill="#8585cc"
+                  d="M30.5,38.5c4.418,0,8-3.582,8-8v-21c0-4.418-3.582-8-8-8h-21c-4.418,0-8,3.582-8,8v21 c0,4.418,3.582,8,8,8H30.5z"
+                />
+                <path
+                  fill="#8d8dd8"
+                  d="M3.4,4.331C2.217,5.726,1.5,7.528,1.5,9.5v21c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-21 c0-0.503-0.052-0.992-0.141-1.469C32.135,4.22,24.832,2,17,2C12.229,2,7.657,2.832,3.4,4.331z"
+                />
+                <path
+                  fill="#bd82f4"
+                  d="M1.505,9.404C1.504,9.437,1.5,9.468,1.5,9.5v21c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8V12.897 C32.439,8.56,25.021,6,17,6C11.465,6,6.22,7.226,1.505,9.404z"
+                />
+                <path
+                  fill="#ed73f4"
+                  d="M1.5,13.88V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8V17.981C32.724,13.013,25.217,10,17,10 C11.394,10,6.124,11.414,1.5,13.88z"
+                />
+                <path
+                  fill="#f97dcd"
+                  d="M17,14c-5.705,0-11.014,1.664-15.5,4.509V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-6.935 C33.194,17.698,25.534,14,17,14z"
+                />
+                <path
+                  fill="#fc9c95"
+                  d="M17,18c-5.861,0-11.237,2.033-15.5,5.411V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-0.238 C34.143,22.925,26.152,18,17,18z"
+                />
+                <path
+                  fill="#ffac99"
+                  d="M17,22c-6.145,0-11.66,2.651-15.5,6.859V30.5c0,4.418,3.582,8,8,8h21c2.465,0,4.668-1.117,6.136-2.87 C33.648,27.674,25.999,22,17,22z"
+                />
+                <path
+                  fill="#ffc49c"
+                  d="M30.5,38.5c0.957,0,1.87-0.177,2.721-0.485C31.087,31.065,24.649,26,17,26 c-6.186,0-11.592,3.309-14.566,8.248C3.778,36.777,6.437,38.5,9.5,38.5H30.5z"
+                />
+                <path
+                  fill="#ffde8d"
+                  d="M17,30c-5.137,0-9.573,2.984-11.684,7.309C6.535,38.06,7.964,38.5,9.5,38.5h19.683 C27.35,33.542,22.595,30,17,30z"
+                />
+                <path
+                  fill="#fff69f"
+                  d="M17,34c-3.319,0-6.193,1.813-7.753,4.487C9.332,38.49,9.415,38.5,9.5,38.5h15.26 C23.203,35.818,20.324,34,17,34z"
+                />
+                <path
+                  fill="#8b75a1"
+                  d="M31,2c3.86,0,7,3.14,7,7v22c0,3.86-3.14,7-7,7H9c-3.86,0-7-3.14-7-7V9c0-3.86,3.14-7,7-7H31 M31,1H9 C4.582,1,1,4.582,1,9v22c0,4.418,3.582,8,8,8h22c4.418,0,8-3.582,8-8V9C39,4.582,35.418,1,31,1L31,1z"
+                />
+                <path
+                  fill="#fff"
+                  d="M27.5 11A1.5 1.5 0 1 0 27.5 14A1.5 1.5 0 1 0 27.5 11Z"
+                />
+                <path
+                  fill="none"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                  stroke-width="2"
+                  d="M20 14A6 6 0 1 0 20 26A6 6 0 1 0 20 14Z"
+                />
+                <path
+                  fill="none"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                  stroke-width="2"
+                  d="M33,14.5c0-4.142-3.358-7.5-7.5-7.5 c-2.176,0-8.824,0-11,0C10.358,7,7,10.358,7,14.5c0,2.176,0,8.824,0,11c0,4.142,3.358,7.5,7.5,7.5c2.176,0,8.824,0,11,0 c4.142,0,7.5-3.358,7.5-7.5C33,23.324,33,16.676,33,14.5z"
+                />
+              </svg>
+            </a>
+            <a href="https://twitter.com/ShubhiS44569779">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 40 40"
+                width="50px"
+                height="50px"
+              >
+                <path
+                  fill="#c2e8ff"
+                  d="M12.951,35c-3.459,0-6.842-0.822-9.895-2.394c3.589-0.042,6.972-1.23,9.795-3.443l1.106-0.867 l-1.405-0.026c-2.85-0.053-5.379-1.752-6.524-4.306c0.233,0.02,0.466,0.029,0.698,0.029c0.745,0,1.48-0.098,2.187-0.291 l2.038-0.557l-2.071-0.416c-3.154-0.633-5.503-3.28-5.816-6.435c0.94,0.398,1.956,0.624,2.979,0.657l1.748,0.056l-1.454-0.972 C4.303,14.679,3.09,12.408,3.09,9.964c0-1.048,0.225-2.081,0.654-3.025c4.04,4.629,9.808,7.443,15.944,7.751l0.661,0.033 l-0.148-0.645c-0.125-0.543-0.188-1.103-0.188-1.665c0-4.023,3.273-7.296,7.296-7.296c2.01,0,3.951,0.84,5.326,2.304l0.189,0.202 l0.272-0.054c1.337-0.263,2.628-0.691,3.853-1.279c-0.605,1.145-1.486,2.079-2.594,2.742l-0.397,0.237L34.322,10l0.364-0.016 c0.988-0.121,1.94-0.328,2.875-0.628c-0.806,0.958-1.725,1.811-2.744,2.547l-0.218,0.157l0.011,0.27 c0.014,0.327,0.021,0.657,0.021,0.987c0,5.265-2.037,10.595-5.588,14.624C26.206,31.162,21.11,35,12.951,35z"
+                />
+                <path
+                  fill="#7496c4"
+                  d="M27.309,5.617c1.873,0,3.681,0.782,4.961,2.146l0.379,0.404l0.543-0.107 c0.806-0.159,1.595-0.376,2.364-0.649c-0.422,0.464-0.91,0.864-1.459,1.192l-0.789,0.508l0.427,0.833l0.318,0.621l0.693-0.085 c0.425-0.052,0.843-0.119,1.256-0.203c-0.464,0.437-0.958,0.844-1.478,1.22l-0.436,0.315l0.023,0.538 c0.014,0.32,0.021,0.643,0.021,0.966c0,5.145-1.991,10.354-5.463,14.294c-2.77,3.143-7.745,6.889-15.718,6.889 c-2.727,0-5.406-0.524-7.906-1.533c2.959-0.382,5.73-1.542,8.115-3.411l2.213-1.735l-2.811-0.052 c-2.371-0.044-4.504-1.311-5.693-3.277c0.74-0.012,1.472-0.115,2.176-0.308l4.073-1.114l-4.14-0.831 c-2.663-0.534-4.71-2.61-5.287-5.182c0.755,0.235,1.543,0.37,2.335,0.395l3.495,0.113l-2.908-1.944 C4.72,14.356,3.59,12.241,3.59,9.964c0-0.713,0.112-1.418,0.328-2.089c4.093,4.37,9.748,7.014,15.746,7.314l1.322,0.066 l-0.297-1.29c-0.116-0.505-0.176-1.027-0.176-1.552C20.512,8.666,23.561,5.617,27.309,5.617 M27.309,4.617 c-4.305,0-7.796,3.491-7.796,7.796c0,0.611,0.07,1.206,0.201,1.776C13.234,13.865,7.49,10.76,3.644,6.044 C2.974,7.195,2.59,8.534,2.59,9.964c0,2.704,1.376,5.09,3.467,6.488c-1.278-0.041-2.479-0.391-3.531-0.975c0,0.033,0,0.065,0,0.098 c0,3.778,2.687,6.929,6.254,7.644c-0.654,0.179-1.343,0.274-2.055,0.274c-0.502,0-0.991-0.049-1.466-0.139 c0.993,3.097,3.871,5.352,7.283,5.415c-2.668,2.092-6.029,3.338-9.682,3.338c-0.629,0-1.249-0.036-1.86-0.109 C4.45,34.21,8.548,35.5,12.951,35.5c14.34,0,22.181-11.88,22.181-22.182c0-0.337-0.008-0.674-0.022-1.009 c1.523-1.1,2.845-2.473,3.89-4.036c-1.385,0.615-2.814,1.024-4.375,1.215l-0.014-0.027c1.61-0.964,2.756-2.453,3.339-4.274 c-1.506,0.893-3.175,1.542-4.951,1.892C31.577,5.564,29.551,4.617,27.309,4.617L27.309,4.617z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="links-footer">
+          <h2>SITE LINKS</h2>
+          <div class="links-container">
+            <div class="container footer-link-container">
+              <ul>
+                <li><a href="/trust">trust</a></li>
+                <li><a href="/company">company</a></li>
+                <li><a href="/legal">legal</a></li>
+                <li><a href="/kayeth">kayeth</a></li>
+                <li><a href="/kaviyatri">kaviyatri</a></li>
+              </ul>
+            </div>
+            <div class="container footer-link-container">
+              <ul>
+                <li><a href="/media">Media Gallery</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="lisc">© 2021 @kgruop All Rights Reserved</p>
+      <p class="lisc">
+        The material on this site may not be reproduced, distributed,
+        transmitted, cached or otherwise used, except with the prior written
+        permission of @kgroup.
+      </p>
     </footer>
     <script src="/public/app.js"></script>
     <script src="/public/form.js"></script>
-</body>
-
+  </body>
 </html>
