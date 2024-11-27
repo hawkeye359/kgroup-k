@@ -180,19 +180,21 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 .card {
   margin: 1rem;
   transition: 0.3s;
-
   width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card .card-image {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
 }
 
 .card .card-image .image {
@@ -201,10 +203,8 @@
 }
 
 .map-image {
-  width: 100%;
-  height: 100%;
   padding: 0px;
-  min-height: 400px;
+  height: 400px;
 }
 
 .map-image.america {
@@ -230,6 +230,13 @@
 
 .map-image.mumbai {
   background-image: url("images/mumbai-map.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.map-image.delhi {
+  background-image: url("images/delhi_map.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -359,14 +366,17 @@
   border: 2px dashed black;
   position: relative;
   height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .donate-inner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 80%;
 }
 
@@ -381,6 +391,11 @@
 
 .donate-button {
   cursor: pointer;
+  display: block;
+}
+
+.donate-caption {
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 700px) {
